@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+}
+
+body {
+  color: var(--mainBlack);
+  font-family: "Lato";
+  background-color: var(--bodyColor);
+  position: relative;
+}
+
+.navbar {
+  background-color: var(--secondaryColor);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-center {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.menu-icon {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.nav-title {
+  color: var(--mainBlack);
+}
+
+.cart-btn {
+  color: var(--primaryColor);
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon i,
+.cart-btn i {
+  font-size: 2rem;
+}
+
+.cart-items {
+  position: absolute;
+  background-color: var(--mainRed);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainWhite);
+  font-size: 0.5rem;
+  bottom: 0;
+  right: -5px;
+}
+/* end of Navbar */
+
+.products-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 2.5rem;
+  padding: 0 2rem;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 8px 8px 0 0;
+}
+
+.product {
+  background-color: var(--mainWhite);
+  padding-bottom: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.section-title {
+  margin: 2rem 0;
+}
+
+.add-to-cart {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
